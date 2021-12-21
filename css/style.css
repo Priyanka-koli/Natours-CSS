@@ -1,0 +1,122 @@
+/*
+COLORS:
+
+Light green: #7ed56f
+Medium green: #55c57a
+Dark green: #28b485
+
+*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+body{
+    padding: 1rem;
+    font-size: 2rem;
+    font-family: "Lato";
+    font-weight: 700;
+}
+
+.header{
+    background-image: linear-gradient(to bottom right , rgba(126, 213, 111, 0.6) , rgba(40, 180, 133, 0.6)),url(../img/hero.jpg);
+    background-position: top;
+    height: 95vh;
+    clip-path: polygon(0 0,100% 0,100% 90%,0 100%);
+    background-size: cover;
+    position: relative;
+}
+.logo-box{
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
+}
+.logo{
+    height: 3.4rem;
+}
+.header-heading{
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: center;
+    position: absolute;
+    top:50%;
+    left:50% ;
+    transform: translate(-50%,-50%);
+    
+}
+.heading-main{
+    display: block;
+    font-size: 5rem;
+    letter-spacing: 1.5rem;
+    font-weight: 400;
+
+    animation-name: MoveInLeft;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+}
+.heading-sub{
+    display: block;
+    font-size: 1.5rem;
+    letter-spacing: 0.9rem;
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+
+    animation-name: MoveInRight;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+}
+/* animation effects for heading */
+@keyframes MoveInLeft {
+    0%{
+        opacity: 0;
+        transform: translateX(-10%);
+    }
+    80%{
+        transform: translateX(5%);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+@keyframes MoveInRight {
+    0%{
+        opacity: 0;
+        transform: translateX(10%);
+    }
+    80%{
+        transform: translateX(-5%);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+/* animation effects for heading */
+
+/* button-css */
+.btn:hover{
+    background-color: #777;
+    color: #fff;
+}
+.btn:link, .btn-visited{
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1rem 3rem;
+    color: tomato;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+
+}
+.btn:active{
+    background-color: white;
+    color:orangered;
+}
+.btn-white{
+    background-color: white;
+    color: black;
+}
+/* button-css */
